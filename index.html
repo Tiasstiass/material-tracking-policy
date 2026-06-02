@@ -1,87 +1,252 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Privacy Policy</title>
-  <style>
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      max-width: 760px;
-      margin: 60px auto;
-      padding: 0 24px;
-      color: #1a1a1a;
-      line-height: 1.7;
-    }
-    h1 { font-size: 1.8rem; margin-bottom: 4px; }
-    h2 { font-size: 1.1rem; margin-top: 2rem; }
-    p, li { font-size: 0.97rem; color: #333; }
-    .meta { color: #888; font-size: 0.85rem; margin-bottom: 2rem; }
-    a { color: #1a1a1a; }
-  </style>
-</head>
-<body>
-  <h1>Privacy Policy</h1>
-  <p class="meta">Last updated: May 18, 2026</p>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Privacy Policy — Material Tracking</title>
+    <style>
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
 
-  <p>
-    This Privacy Policy describes how this application ("the App") collects, uses, and shares
-    information when you install and use it through the Shopify platform.
-  </p>
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        font-size: 16px;
+        line-height: 1.7;
+        color: #111827;
+        background: #f9fafb;
+      }
 
-  <h2>Information We Collect</h2>
-  <p>When you install the App, we collect the following information from your Shopify store:</p>
-  <ul>
-    <li>Store URL and basic shop information (name, email, currency, timezone)</li>
-    <li>Product and variant data, including titles, SKUs, and inventory levels</li>
-    <li>Order data necessary to support production and fulfillment workflows</li>
-    <li>Webhook event data sent by Shopify (e.g. product updates, order creation)</li>
-  </ul>
+      .wrapper {
+        max-width: 720px;
+        margin: 0 auto;
+        padding: 64px 24px 96px;
+      }
 
-  <h2>How We Use Your Information</h2>
-  <ul>
-    <li>To provide and operate the App's core features (bills of materials, material tracking, production workflows)</li>
-    <li>To sync relevant Shopify data into the App's database</li>
-    <li>To display your store's products and inventory within the App</li>
-    <li>To improve the App's functionality and reliability</li>
-  </ul>
+      header {
+        margin-bottom: 48px;
+      }
 
-  <h2>Data Storage</h2>
-  <p>
-    Your data is stored securely and is not sold or shared with third parties for marketing purposes.
-    Data is retained for as long as the App is installed on your store. Upon uninstallation, you may
-    request deletion of your data by contacting us.
-  </p>
+      header p.app {
+        font-size: 13px;
+        font-weight: 600;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: #6b7280;
+        margin-bottom: 12px;
+      }
 
-  <h2>Sharing of Information</h2>
-  <p>
-    We do not sell, trade, or rent your personal or store information to third parties. We may share
-    data with service providers who assist in operating the App (e.g. hosting infrastructure), under
-    strict confidentiality obligations.
-  </p>
+      h1 {
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 1.2;
+        color: #0f1923;
+        margin-bottom: 16px;
+      }
 
-  <h2>Your Rights</h2>
-  <p>
-    You may request access to, correction of, or deletion of your data at any time by contacting us
-    at the email below. We will respond within 30 days.
-  </p>
+      header p.meta {
+        font-size: 14px;
+        color: #6b7280;
+      }
 
-  <h2>Shopify's Role</h2>
-  <p>
-    This App is built on the Shopify platform. Shopify's own privacy practices are described in
-    <a href="https://www.shopify.com/legal/privacy" target="_blank">Shopify's Privacy Policy</a>.
-  </p>
+      h2 {
+        font-size: 18px;
+        font-weight: 600;
+        color: #0f1923;
+        margin-top: 40px;
+        margin-bottom: 12px;
+      }
 
-  <h2>Changes to This Policy</h2>
-  <p>
-    We may update this Privacy Policy from time to time. Changes will be posted on this page with an
-    updated date. Continued use of the App after changes constitutes acceptance.
-  </p>
+      p {
+        margin-bottom: 16px;
+        color: #374151;
+      }
 
-  <h2>Contact</h2>
-  <p>
-    For privacy-related questions or data requests, contact us at:
-    <a href="mailto:m.moutte3@gmail.com">m.moutte3@gmail.com</a>
-  </p>
-</body>
+      ul {
+        margin: 0 0 16px 0;
+        padding-left: 20px;
+      }
+
+      ul li {
+        margin-bottom: 6px;
+        color: #374151;
+      }
+
+      a {
+        color: #2f6fed;
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      .divider {
+        border: none;
+        border-top: 1px solid #e5e7eb;
+        margin: 40px 0;
+      }
+
+      footer {
+        margin-top: 64px;
+        font-size: 13px;
+        color: #9ca3af;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <p class="app">Material Tracking</p>
+        <h1>Privacy Policy</h1>
+        <p class="meta">Effective date: June 1, 2026 &nbsp;·&nbsp; Last updated: June 2, 2026</p>
+      </header>
+
+      <p>
+        Material Tracking ("the App") is a Shopify embedded application operated by Matthias Moutte
+        ("we," "us," "our"). This policy describes what data we collect from merchants and their
+        stores, how we use it, how long we keep it, and your rights regarding that data.
+      </p>
+
+      <h2>1. What data we collect</h2>
+      <p>When a merchant installs the App, we collect and store the following:</p>
+      <ul>
+        <li>Store URL, shop domain, and basic shop information (name, currency, timezone)</li>
+        <li>Shopify session and access token required to authenticate API calls</li>
+        <li>
+          Product and variant data (variant IDs, display names, images, prices) needed to configure
+          production specifications
+        </li>
+        <li>
+          Inventory location data (location IDs and names) used when logging a build to update
+          Shopify inventory
+        </li>
+        <li>
+          Order line item data (variant ID and quantity only) received via the
+          <code>orders/fulfilled</code> webhook, used exclusively to deduct material stock in Auto
+          mode
+        </li>
+      </ul>
+      <p>
+        We do not collect, store, or process any personal information about a merchant's customers —
+        including names, email addresses, phone numbers, or mailing addresses.
+      </p>
+
+      <h2>2. Data we create inside the App</h2>
+      <p>The App stores operational data created by the merchant:</p>
+      <ul>
+        <li>
+          Materials: name, unit of measure, stock quantity, cost per unit, low stock threshold
+        </li>
+        <li>
+          Production configurations: which materials each product variant uses, quantity per unit,
+          production mode
+        </li>
+        <li>
+          Stock activity log: every stock adjustment and build event, with date, quantity change,
+          stock after, and optional reason note
+        </li>
+        <li>Build history: records of manually logged production builds</li>
+      </ul>
+      <p>
+        This data is scoped to the installing shop and is never shared with other merchants or third
+        parties.
+      </p>
+
+      <h2>3. How we use data</h2>
+      <p>All data collected and stored is used solely to provide the App's core functionality:</p>
+      <ul>
+        <li>
+          Calculating how many units of each product variant can be made from current material stock
+        </li>
+        <li>
+          Deducting material stock when a build is logged (Build mode) or when a Shopify order is
+          fulfilled (Auto mode)
+        </li>
+        <li>
+          Updating Shopify inventory at the merchant's chosen location when a build is confirmed
+        </li>
+        <li>Displaying stock activity and build history to the merchant</li>
+      </ul>
+      <p>
+        We do not use any data for analytics, advertising, personalization, or any purpose beyond
+        operating the App.
+      </p>
+
+      <h2>4. Order data and Auto mode</h2>
+      <p>
+        When a merchant enables Auto mode on a product configuration, the App subscribes to the
+        <code>orders/fulfilled</code> Shopify webhook. When an order is fully fulfilled, we receive
+        the order payload and extract only the variant ID and quantity from each line item. This
+        information is used to deduct the corresponding raw material stock. No customer information
+        from the order is read, stored, or processed.
+      </p>
+      <p>
+        Material stock deducted by Auto mode is not automatically restored if an order is cancelled,
+        refunded, or returned. Merchants can manually adjust stock in the App if needed.
+      </p>
+
+      <h2>5. Data retention and deletion</h2>
+      <p>
+        All shop data — materials, configurations, stock activity, and build history — is retained
+        for as long as the App is installed on the merchant's store.
+      </p>
+      <p>
+        <strong
+          >When the App is uninstalled, all shop data is automatically and permanently
+          deleted.</strong
+        >
+        This happens immediately via Shopify's <code>shop/redact</code> compliance webhook. No
+        manual request is required. No data is retained after uninstallation.
+      </p>
+
+      <h2>6. Data sharing</h2>
+      <p>
+        We do not sell, rent, or share merchant or customer data with any third party, except as
+        required to operate the App (for example, hosting infrastructure). Our hosting provider,
+        Render, processes data on our behalf under appropriate data processing terms. No customer
+        personal data is ever transmitted to our infrastructure.
+      </p>
+
+      <h2>7. Security</h2>
+      <p>
+        All data is transmitted over HTTPS. Data at rest is encrypted by our hosting provider.
+        Access to production data is restricted to authorized personnel only.
+      </p>
+
+      <h2>8. Merchant rights</h2>
+      <p>
+        Merchants may request a description of the data we hold for their store at any time by
+        contacting us at the address below. As noted in Section 5, uninstalling the App permanently
+        deletes all associated data.
+      </p>
+
+      <h2>9. Changes to this policy</h2>
+      <p>
+        We may update this policy from time to time. The effective date at the top of this page will
+        reflect the most recent revision. Continued use of the App after an update constitutes
+        acceptance of the revised policy.
+      </p>
+
+      <h2>10. Contact</h2>
+      <p>
+        Questions about this policy or data handling practices:<br />
+        <a href="mailto:m.moutte3@gmail.com">m.moutte3@gmail.com</a>
+      </p>
+
+      <hr class="divider" />
+
+      <footer>
+        Material Tracking &nbsp;·&nbsp; &copy; 2026 Matthias Moutte &nbsp;·&nbsp;
+        <a href="mailto:m.moutte3@gmail.com">m.moutte3@gmail.com</a>
+      </footer>
+    </div>
+  </body>
 </html>
